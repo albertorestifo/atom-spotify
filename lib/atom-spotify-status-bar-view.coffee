@@ -55,7 +55,7 @@ class AtomSpotifyStatusBarView extends HTMLElement
                 trackInfoText = ""
                 if atom.config.get('atom-spotify2.showPlayStatus')
                   if !atom.config.get('atom-spotify2.showPlayIconAsText')
-                    trackInfoText = if state.state == 'playing' then '► ' else '|| '
+                    trackInfoText = if state.state == 'playing' then '► ' else '▋▋ '
                   else
                     trackInfoText = if state.state == 'playing' then 'Now Playing: ' else 'Paused: '
                 trackInfoText += "#{track.artist} - #{track.name}"
